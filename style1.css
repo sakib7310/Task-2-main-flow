@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+nav {
+  height: 80px;
+  background: #fdcc04;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  padding: 0 10px;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.sun {
+  background: #fdcc04;
+}
+
+.sun-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 95vh;
+  padding: 3rem 20px;
+}
+
+.column-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #000;
+  padding: 0 20px; 
+}
+
+.column-left h1 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.column-left p {
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border: none;
+  color: #fdcc04;
+  background: #000;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; 
+}
+
+button:hover {
+  background: #fff;
+  color: #000;
+}
+
+.column-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.sun-image {
+  width: 100%;
+  height: auto; 
+}
+
+@media screen and (max-width: 768px) {
+  .sun-container {
+    grid-template-columns: 1fr; 
+    height: auto; 
+    padding: 3rem 10px; 
+  }
+
+  .column-left h1 {
+    font-size: 2rem;
+  }
+
+  .column-left p {
+    font-size: 1rem;
+  }
+
+  .button-container {
+    margin-top: 10px;
+  }
+
+}
